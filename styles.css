@@ -74,20 +74,24 @@ body {
   margin-top: 15px;
   background-color: grey;
   border: 1px solid black;
+  text-align: center; /* Centra el contenido del div */
+  border-radius: 15px;
+  max-height: 1000px;
+}
+
+
+
+.content .title {
+  padding: 5px; /* Añade un poco de espacio alrededor del texto */
+  max-width: 50%; /* Establece el ancho máximo del título */
+  margin: 0 auto; /* Centra el título horizontalmente */
+  text-align: center; /* Centra el texto del título */
+  border: 1px solid black;
+  border-radius: 15px;
 }
 
 .content1 {
-  padding-top: 20px;
-  padding-left: 10px;
-  padding-bottom: 10px;
-  padding-right: 10px;
-}
-
-.content .title {
-  padding-left: 5px;
-  padding-right: 5px;
-  text-align: center;
-  border: 1px solid black;
+  padding: 15px;
 }
 
 .title1 {
@@ -102,37 +106,11 @@ body {
   background-color: yellowgreen;
 }
 
-@media (min-width: 992px) {
-  .col-lg-4 {
-    float: left;
-    width: 30%;
-  }
 
-  .container {
-    margin-left: 1%;
-  }
-}
 
 @media (min-width: 768px) AND (max-width: 991px) {
   .col-md-6 {
-    float: left;
     width: 46%;
   }
-
-  .col-md-7 {
-    float: left;
-    width: 94%;
-    height: 120px;
-  }
 }
 
-@media (max-width: 767px) {
-  .container {
-    margin-left: 22%;
-  }
-
-  .col-sd-12 {
-    float: left;
-    width: 65%;
-  }
-}
