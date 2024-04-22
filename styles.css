@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: cyan;
+}
+
+#header-nav {
+    background-color: #222;
+    border-radius: 0;
+    border: 0;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  
+  .navbar {
+    --bs-navbar-padding-y: 0; /* Establece el relleno superior e inferior a 0 */
+    /* Mantén el resto de las variables y estilos sin cambios */
+    /* ... */
+  }
+
+  .navbar-brand {
+    margin-left: 30px;
+  }
+
+  .navbar-brand h1 {
+    color: cyan;
+  }
+  
+  .navbar-header {
+    display: flex;
+  }
+  
+  .nav-list {
+    justify-content: space-between;
+    gap: 5px;
+  }
+  
+  .nav-list a {
+    color: cyan;
+    text-align: center;
+    border: 1px solid cyan;
+    border-radius: 20px;
+  }
+  
+  .nav-list a:hover {
+    background: #e7e7e7;
+    border-radius: 20px;
+  }
+
+  .navbar-toggler {
+    margin-left: auto;
+    background-color: cyan;
+  }
+
+  #text {
+    margin-top: 30px;
+    background-color: grey;
+  }
