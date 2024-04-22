@@ -1,64 +1,139 @@
 * {
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    background-color: cyan;
+  background-color: cyan;
 }
 
 #header-nav {
-    background-color: #222;
-    border-radius: 0;
-    border: 0;
-    width: 100%;
-    margin-bottom: 30px;
-  }
+  background-color: #222;
+  border-radius: 0;
+  border: 0;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.navbar {
+  --bs-navbar-padding-y: 0; /* Establece el relleno superior e inferior a 0 */
+  /* Mantén el resto de las variables y estilos sin cambios */
+  /* ... */
+}
+
+.navbar-brand {
+  margin-left: 30px;
+}
+
+.navbar-brand h1 {
+  color: cyan;
+}
+
+.navbar-header {
+  display: flex;
+}
+
+.nav-list {
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.nav-list a {
+  color: cyan;
+  text-align: center;
+  border: 1px solid cyan;
+  border-radius: 20px;
+}
+
+.nav-list a:hover {
+  background: #e7e7e7;
+  border-radius: 20px;
+}
+
+.navbar-toggler {
+  margin-left: auto;
+  background-color: cyan;
+}
+
+#main {
+  justify-content: center;
+}
+
+.title0 {
+  justify-content: center;
+  text-align: center;
+  margin: 30px;
+}
+
+.content {
+  position: relative;
+  margin-left: 20px;
+  margin-top: 15px;
+  background-color: grey;
+  border: 1px solid black;
+}
+
+.content1 {
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+}
+
+.content .title {
   
-  .navbar {
-    --bs-navbar-padding-y: 0; /* Establece el relleno superior e inferior a 0 */
-    /* Mantén el resto de las variables y estilos sin cambios */
-    /* ... */
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.title1 {
+  background-color: #9fd5d1;
+}
+
+.title2 {
+  background-color: brown;
+}
+
+.title3 {
+  background-color: yellowgreen;
+}
+
+@media (min-width: 992px) {
+  .col-lg-4 {
+    float: left;
+    width: 30%;
   }
 
-  .navbar-brand {
-    margin-left: 30px;
+  .container {
+    margin-left: 1%;
+  }
+}
+
+@media (min-width: 768px) AND (max-width: 991px) {
+  .col-md-6 {
+    float: left;
+    width: 46%;
   }
 
-  .navbar-brand h1 {
-    color: cyan;
+  .col-md-7 {
+    float: left;
+    width: 94%;
+    height: 120px;
   }
-  
-  .navbar-header {
-    display: flex;
-  }
-  
-  .nav-list {
-    justify-content: space-between;
-    gap: 5px;
-  }
-  
-  .nav-list a {
-    color: cyan;
-    text-align: center;
-    border: 1px solid cyan;
-    border-radius: 20px;
-  }
-  
-  .nav-list a:hover {
-    background: #e7e7e7;
-    border-radius: 20px;
+}
+
+@media (max-width: 767px) {
+  .container {
+    margin-left: 22%;
   }
 
-  .navbar-toggler {
-    margin-left: auto;
-    background-color: cyan;
+  .col-sd-12 {
+    float: left;
+    width: 65%;
   }
-
-  #text {
-    margin-top: 30px;
-    background-color: grey;
-  }
+}
